@@ -15,15 +15,26 @@
         <div class="page-title">Clipboard API</div>
     </header>
     <section class="page">
-        <div class="page__field page__copy">
-            <textarea id="copy-box" class="text-box" name="" id="" cols="30" rows="10"></textarea>
-            <button id="copy-btn" class="btn">Копировать</button>
+        <div class="page__text">
+            <div class="page__field page__copy">
+                <textarea id="copy-box" class="text-box" name="" id="" cols="30" rows="10" readonly>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam nisi iure magni eligendi, fugiat ratione dolorem accusantium ad ipsam sunt consectetur quisquam quae deleniti assumenda pariatur quas. Omnis, maiores. Eos!</textarea>
+                <button id="copy-btn" class="btn">Копировать</button>
+            </div>
+            <div class="page__field page__paste">
+                <textarea id="paste-box" class="text-box" name="" id="" cols="30" rows="10"></textarea>
+                <button id="paste-btn" class="btn">Вставить</button>
+            </div>
         </div>
-        <div class="page__field page__paste">
-            <textarea id="paste-box" class="text-box" name="" id="" cols="30" rows="10"></textarea>
-            <button id="paste-btn" class="btn">Вставить</button>
+        <div class="page__image">
+            <div class="page__field page__copy">
+                <img id="copy-picture" class="text-box image-box" src="./images/picture.png" alt="">
+                <button id="copy-picture-btn" class="btn btn__image">Копировать</button>
+            </div>
+            <div class="page__field page__paste">
+                <img id="paste-picture" class="text-box image-box" alt="">
+                <button id="paste-picture-btn" class="btn btn__image">Вставить</button>
+            </div>
         </div>
-
     </section>
     <script src="script.js"></script>
 </body>
